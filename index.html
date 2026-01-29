@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Frontend Developer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Work Sans', sans-serif;
+      background-color: #fafaf9;
+      color: #1c1c1c;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* HERO */
+    .hero {
+      padding: 100px 0 80px;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 56px;
+      font-weight: 400;
+      margin-bottom: 16px;
+    }
+
+    .hero p.title {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    .hero p.value {
+      font-size: 20px;
+      max-width: 600px;
+    }
+
+    /* SECTION HEADERS */
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 34px;
+      margin-bottom: 48px;
+    }
+
+    /* PROJECTS */
+    .projects {
+      padding: 80px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+    }
+
+    .project-card {
+      background: #ffffff;
+      border: 1px solid #e5e5e5;
+      padding: 28px;
+      transition: 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.06);
+    }
+
+    .project-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .project-card p {
+      font-size: 15px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tech span {
+      font-size: 13px;
+      padding: 4px 10px;
+      border: 1px solid #e5e5e5;
+      background: #fafaf9;
+    }
+
+    .links a {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 10px 18px;
+      margin-right: 8px;
+      border: 1px solid #e5e5e5;
+      color: #1c1c1c;
+      transition: 0.2s ease;
+    }
+
+    .links a.primary {
+      background: #0f52ba;
+      color: #fff;
+      border-color: #0f52ba;
+    }
+
+    .links a:hover {
+      background: #1c1c1c;
+      color: #fff;
+      border-color: #1c1c1c;
+    }
+
+    /* SKILLS */
+    .skills {
+      padding: 80px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      list-style: none;
+    }
+
+    .skills li {
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e5e5;
+      font-weight: 500;
+    }
+
+    /* CONTACT */
+    .contact {
+      padding: 80px 0 100px;
+    }
+
+    .contact a {
+      display: block;
+      text-decoration: none;
+      color: #1c1c1c;
+      padding: 12px 0;
+      border-bottom: 1px solid #e5e5e5;
+      max-width: 400px;
+      transition: 0.2s ease;
+    }
+
+    .contact a:hover {
+      padding-left: 8px;
+      color: #0f52ba;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .hero p.value {
+        font-size: 18px;
+      }
+
+      .section-title {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Adekola Korede</h1>
+      <p class="title">Frontend Developer (HTML, CSS, JavaScript)</p>
+      <p class="value">
+        I build clean, fast, and reliable web interfaces that solve real problems.
+      </p>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="container">
+      <h2 class="section-title">Selected Work</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Live Markdown Editor</h3>
+          <p>
+            Real-time markdown editor with live preview and localStorage
+            persistence so users never lose their work.
+          </p>
+          <div class="tech">
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>localStorage</span>
+          </div>
+          <div class="links">
+            <a href="#" class="primary">Live Demo</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Weather Forecast App</h3>
+          <p>
+            Displays accurate 5-hour and 5-day weather forecasts using a
+            third-party weather API.
+          </p>
+          <div class="tech">
+            <span>JavaScript</span>
+            <span>REST API</span>
+            <span>Responsive</span>
+          </div>
+          <div class="links">
+            <a href="#" class="primary">Live Demo</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <h3>Calculator App</h3>
+          <p>
+            A responsive calculator with keyboard support, clean UI, and proper
+            error handling.
+          </p>
+          <div class="tech">
+            <span>JavaScript</span>
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+          <div class="links">
+            <a href="#" class="primary">Live Demo</a>
+            <a href="#">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <ul>
+        <li>HTML & Semantic Markup</li>
+        <li>CSS & Responsive Design</li>
+        <li>JavaScript (ES6+)</li>
+        <li>REST APIs</li>
+        <li>Git & GitHub</li>
+        <li>Mobile-First Development</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <a href="mailto:youremail@example.com">youremail@example.com</a>
+      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+</body>
+</html>
