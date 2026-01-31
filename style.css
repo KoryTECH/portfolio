@@ -41,6 +41,52 @@
     max-width: 600px;
   }
 
+  .about {
+    padding: 100px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.about__content {
+    max-width: 700px;
+}
+
+.about__text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: 20px;
+}
+
+.about__text:last-child {
+    margin-bottom: 0;
+}
+
+/* About Section */
+.about {
+    padding: 100px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.about__content {
+    max-width: 700px;
+}
+
+.about__text {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--color-text);
+    margin-bottom: 24px;
+}
+
+.about__cta {
+    font-size: 17px;
+    line-height: 1.8;
+    color: var(--color-text-muted);
+    padding: 24px;
+    background: var(--color-card);
+    border-left: 3px solid var(--color-accent);
+}
+
   /* SECTION HEADERS */
   .section-title {
     font-family: 'DM Serif Display', serif;
